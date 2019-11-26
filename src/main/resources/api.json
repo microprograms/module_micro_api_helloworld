@@ -1,0 +1,90 @@
+{
+	"apiDefinitions": [
+		{
+			"comment": "welcome接口",
+			"ext": {
+				"url": "/welcome"
+			},
+			"name": "welcome",
+			"requestDefinition": {
+				"fieldDefinitions": [
+					{
+						"comment": "名字",
+						"example": "xuzewei",
+						"ext": {
+							"verify": "notBlank"
+						},
+						"javaType": "String",
+						"name": "name",
+						"required": true
+					},
+					{
+						"comment": "重复次数",
+						"example": 1,
+						"ext": {
+							"verify": ">=1"
+						},
+						"javaType": "Integer",
+						"name": "repeat",
+						"required": true
+					}
+				]
+			},
+			"responseDefinition": {
+				"fieldDefinitions": [
+					{
+						"comment": "欢迎语",
+						"example": "welcome! xuzewei",
+						"ext": {
+							"verify": "notBlank"
+						},
+						"javaType": "String",
+						"name": "word",
+						"required": true
+					}
+				]
+			}
+		}
+	],
+	"comment": "Hello World",
+	"changeLogs": [
+		{
+			"version": "v3.0.0",
+			"items": [
+				"删除：“查询支付详情”接口"
+			]
+		},
+		{
+			"version": "v2.0.0",
+			"items": [
+				"新增：“查询支付详情”接口"
+			]
+		},
+		{
+			"version": "v1.0.0",
+			"items": [
+				"初版"
+			]
+		}
+	],
+	"description": "这是一个简单的 Hello World 模块",
+	"errorCodeDefinitions": [
+		{
+			"message": "状态异常",
+			"code": "invalid_status"
+		}
+	],
+	"mixinDefinitions": [],
+	"modelDefinitions": [],
+	"serverAddressDefinition": {
+		"host": "127.0.0.1",
+		"port": 8002,
+		"url": "/api"
+	},
+	"showdocDefinition": {
+		"apiKey": "",
+		"apiToken": "",
+		"url": "http://www.showdoc.cc/server/api/item/updateByApi"
+	},
+	"version": "v3.0.0"
+}

@@ -1,0 +1,118 @@
+{
+	"entityDefinitions": [
+		{
+			"comment": "学员",
+			"fieldDefinitions": [
+				{
+					"comment": "ID",
+					"example": "example",
+					"javaType": "String",
+					"name": "id",
+					"primaryKey": 1,
+					"required": true
+				},
+				{
+					"comment": "登录名",
+					"defaultValue": "",
+					"example": "xuzewei",
+					"ext": {
+						"length": 64
+					},
+					"javaType": "String",
+					"name": "loginName",
+					"primaryKey": 0,
+					"required": true
+				},
+				{
+					"comment": "登录密码",
+					"defaultValue": "",
+					"example": "test@123",
+					"ext": {
+						"length": 64
+					},
+					"javaType": "String",
+					"name": "loginPassword",
+					"primaryKey": 0,
+					"required": true
+				},
+				{
+					"comment": "创建时间",
+					"defaultValue": 0,
+					"example": "example",
+					"javaType": "Long",
+					"name": "createdAt",
+					"primaryKey": 0,
+					"required": true
+				},
+				{
+					"comment": "上次更新时间",
+					"defaultValue": 0,
+					"example": "example",
+					"javaType": "Long",
+					"name": "updatedAt",
+					"primaryKey": 0,
+					"required": true
+				}
+			],
+			"name": "Student"
+		},
+		{
+			"comment": "班级",
+			"fieldDefinitions": [
+				{
+					"comment": "ID",
+					"example": "example",
+					"javaType": "String",
+					"name": "id",
+					"primaryKey": 1,
+					"required": true
+				},
+				{
+					"comment": "班级名称",
+					"defaultValue": "",
+					"example": "2019花花班",
+					"ext": {
+						"length": 64
+					},
+					"javaType": "String",
+					"name": "name",
+					"primaryKey": 0,
+					"required": true
+				},
+				{
+					"comment": "班级描述",
+					"defaultValue": "",
+					"example": "用线条把概念连接起来，并用连接词注明连接。连接词语应能说明两个概念之间的关系，这种说明可视为一句陈述或叫命题。连线使概念之间建立了意义。",
+					"ext": {
+						"length": 64
+					},
+					"javaType": "String",
+					"name": "desc",
+					"primaryKey": 0,
+					"required": true
+				},
+				{
+					"comment": "创建时间",
+					"defaultValue": 0,
+					"example": "example",
+					"javaType": "Long",
+					"name": "createdAt",
+					"primaryKey": 0,
+					"required": true
+				},
+				{
+					"comment": "上次更新时间",
+					"defaultValue": 0,
+					"example": "example",
+					"javaType": "Long",
+					"name": "updatedAt",
+					"primaryKey": 0,
+					"required": true
+				}
+			],
+			"name": "Grade"
+		}
+	],
+	"comment": "Hello World",
+	"version": "v1.0.0"
+}
